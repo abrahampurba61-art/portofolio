@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Abraham Purba | Web Developer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(135deg,#f8fafc,#e0f2fe);
+    color:#1e293b;
+}
+
+/* ===== HEADER ===== */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+    position:fixed;
+    width:100%;
+    background:rgba(255,255,255,0.8);
+    backdrop-filter:blur(10px);
+    box-shadow:0 5px 20px rgba(0,0,0,0.05);
+}
+
+header h2{
+    color:#2563eb;
+}
+
+nav a{
+    color:#1e293b;
+    text-decoration:none;
+    margin-left:20px;
+    font-size:14px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#2563eb;
+}
+
+/* ===== HERO ===== */
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 20px;
+}
+
+.hero h1{
+    font-size:52px;
+    font-weight:700;
+}
+
+.hero span{
+    color:#2563eb;
+}
+
+.hero p{
+    margin-top:15px;
+    font-size:18px;
+    color:#475569;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:30px;
+    padding:14px 30px;
+    background:linear-gradient(90deg,#2563eb,#60a5fa);
+    color:white;
+    border-radius:30px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s;
+    box-shadow:0 10px 25px rgba(37,99,235,0.3);
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+}
+
+/* ===== SECTION ===== */
+section{
+    padding:100px 10%;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:60px;
+    font-size:32px;
+    color:#2563eb;
+    position:relative;
+}
+
+.section-title::after{
+    content:"";
+    width:60px;
+    height:3px;
+    background:#2563eb;
+    display:block;
+    margin:10px auto 0;
+    border-radius:3px;
+}
+
+/* ===== ABOUT ===== */
+.about{
+    text-align:center;
+    max-width:750px;
+    margin:auto;
+    color:#475569;
+    line-height:1.8;
+}
+
+/* ===== SKILLS ===== */
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+.skill{
+    background:white;
+    padding:15px 30px;
+    border-radius:30px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.05);
+    transition:0.3s;
+}
+
+.skill:hover{
+    transform:translateY(-5px);
+}
+
+/* ===== PROJECT ===== */
+.projects{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+
+.project-card{
+    background:white;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.05);
+    transition:0.3s;
+}
+
+.project-card:hover{
+    transform:translateY(-10px);
+}
+
+.project-card h3{
+    margin-bottom:10px;
+    color:#2563eb;
+}
+
+.project-card p{
+    color:#475569;
+}
+
+/* ===== CONTACT ===== */
+#contact p{
+    margin-bottom:10px;
+}
+
+/* ===== FOOTER ===== */
+footer{
+    text-align:center;
+    padding:25px;
+    background:white;
+    color:#64748b;
+    box-shadow:0 -5px 20px rgba(0,0,0,0.05);
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+    header{
+        flex-direction:column;
+    }
+    nav{
+        margin-top:10px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>Abraham Purba</h2>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Project</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <div>
+        <h1>Halo, Saya <span>Abraham Purba</span></h1>
+        <p>Web Developer | Sistem Informasi Sekolah | PHP & MySQL</p>
+        <a href="cv.html" class="btn">CV</a>
+    </div>
+</div>
+
+<section id="about">
+    <h2 class="section-title">Tentang Saya</h2>
+    <div class="about">
+        <p>
+            Saya adalah mahasiswa IT yang berfokus pada pengembangan sistem informasi berbasis web. 
+            Saya telah mengembangkan sistem pendaftaran siswa dan sistem administrasi keuangan sekolah berbasis PHP & MySQL.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">PHP</div>
+        <div class="skill">MySQL</div>
+        <div class="skill">UI Design</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+    <div class="projects">
+        <div class="project-card">
+            <h3>Sistem Pendaftaran Siswa</h3>
+            <p>Website pendaftaran online dengan fitur login admin, upload dokumen, dan dashboard monitoring.</p>
+        </div>
+        <div class="project-card">
+            <h3>Sistem Pembayaran Sekolah</h3>
+            <p>Aplikasi pembayaran SPP dengan laporan keuangan dan grafik rekap pembayaran.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="about">
+        <p>Email: abrahaampurba61@gmail.com</p>
+        <p>WhatsApp: 0822-6871-5591</p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Abraham Purba | All Rights Reserved
+    <div class="social-icons">
+    <a href="https://instagram.com/abraham.purba" target="_blank">
+        <i class="fab fa-instagram"></i>
+   
+    <a href="https://wa.me/082268715591" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</div>
+</footer>
+
+</body>
+</html>
